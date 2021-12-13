@@ -33,15 +33,16 @@ const Crypto = () => {
 
     return (
         <>
-            <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
+            <nav className="navbar sticky-top navbar-expand-lg navbar-dark header">
+                <div class="container-fluid container">
                     <a class="navbar-brand" href="/"><i className="fas fa-coins"></i> CoinStar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <form class="d-flex">
-                            <input class="form-control inputField me-2" type="text" placeholder="Search a coin" onChange={handleChange} />
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                        <form className="d-flex justify-content-end">
+                            <input type="text" className="inputField my-2" placeholder="Search a coin" onChange={handleChange} />
                         </form>
                     </div>
                 </div>
@@ -64,4 +65,4 @@ const Crypto = () => {
     )
 }
 
-export default Crypto;
+export default Crypto
